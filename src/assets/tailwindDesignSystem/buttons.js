@@ -1,6 +1,6 @@
 // module.exports = function ({ addComponents }) {
 //   addComponents({
-//     ".tsp-button": {
+//     ".ota-button": {
 //       "@apply inline-flex items-center justify-center font-medium rounded-xl focus:outline-none":
 //         {},
 //     },
@@ -45,7 +45,7 @@
 // custom-buttons.js
 module.exports = function ({ addComponents }) {
   addComponents({
-    "button.tsp-button": {
+    "button.ota-button": {
       "@apply w-full text-sm flex gap-2 items-center justify-center transition-all outline-none font-medium rounded-xl focus:outline-none":
         {},
 
@@ -301,7 +301,7 @@ module.exports = function ({ addComponents }) {
     },
 
     "table": {
-      "button.tsp-button": {
+      "button.ota-button": {
         "@apply w-16 h-6 px-3 py-0.5 rounded !bg-gray-25 border border-gray-200 font-[13px] gap-1":{},
 
         "&.primary": {
@@ -371,7 +371,7 @@ module.exports = function ({ addComponents }) {
       },
     },
 
-    ".tsp-button": {
+    ".ota-button": {
       ".mat-slide-toggle-thumb-container": {
         ".mat-slide-toggle-thumb": {
           "@apply size-4 bg-gray-25 relative !-left-0.5 !top-[5px]": {},

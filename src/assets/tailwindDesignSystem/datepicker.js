@@ -1,6 +1,6 @@
 module.exports = function ({ addComponents }) {
   addComponents({
-    ".tsp-input": {
+    ".ota-input": {
       "mat-form-field": {
         "@apply static w-full h-8 border-none": {},
         ".mat-form-field-wrapper": {

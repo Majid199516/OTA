@@ -49,28 +49,28 @@ module.exports = function ({ addUtilities }) {
       gap: '4px',
 
       '&.primary': {
-        background: 'var(--tsp-primary-50)',
-        color: 'var(--tsp-primary-500)',
+        background: 'var(--ota-primary-50)',
+        color: 'var(--ota-primary-500)',
       },
 
       '&.success': {
-        background: 'var(--tsp-success-25)',
-        color: 'var(--tsp-success-600)',
+        background: 'var(--ota-success-25)',
+        color: 'var(--ota-success-600)',
       },
 
       '&.danger': {
-        background: 'var(--tsp-error-25)',
-        color: 'var(--tsp-error-600)',
+        background: 'var(--ota-error-25)',
+        color: 'var(--ota-error-600)',
       },
 
       '&.warning': {
-        background: 'var(--tsp-warning-50)',
-        color: 'var(--tsp-warning-500)',
+        background: 'var(--ota-warning-50)',
+        color: 'var(--ota-warning-500)',
       },
 
       '&.info': {
-        background: 'var(--tsp-info-50)',
-        color: 'var(--tsp-info-500)',
+        background: 'var(--ota-info-50)',
+        color: 'var(--ota-info-500)',
       },
       
     },

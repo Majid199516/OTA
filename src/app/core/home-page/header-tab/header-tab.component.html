@@ -1,0 +1,18 @@
+<div class="tab ota-primary-tab">
+    <mat-tab-group class="ota-primary-tab" (selectedTabChange)="matTabChanged($event)">
+      <mat-tab >
+        <ng-template mat-tab-label> اطلاعات کسب و کار </ng-template>
+        <app-bus></app-bus>
+      </mat-tab>
+      <mat-tab *ngIf="!requestMode">
+        <ng-template mat-tab-label> تاریخچه </ng-template>
+      </mat-tab>
+      <mat-tab *ngIf="!requestMode">
+        <ng-template mat-tab-label> کاربران </ng-template>
+      </mat-tab>
+      <mat-tab *ngIf="!requestMode">
+        <ng-template mat-tab-label> صورتحسابهای کسب و کار </ng-template>
+      </mat-tab>
+
+    </mat-tab-group>
+  </div>

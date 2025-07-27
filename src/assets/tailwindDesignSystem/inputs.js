@@ -1,9 +1,9 @@
 module.exports = function ({ addComponents }) {
   addComponents({
-    "div.tsp-input": {
+    "div.ota-input": {
       "@apply max-w-full rounded-xl gap-0.5 relative placeholder:text-gray-800 text-sm flex flex-col justify-center":
         {},
-      "&:not(:has(textarea.tsp-input)):not(:has(.mat-radio-group)):not(:has(mat-checkbox)):not(:has(mat-radio-button)):not(:has(tsp-date-input))": {
+      "&:not(:has(textarea.ota-input)):not(:has(.mat-radio-group)):not(:has(mat-checkbox)):not(:has(mat-radio-button)):not(:has(ota-date-input))": {
         "@apply h-[66px]": {}
       },
       "&:has(.search)": {
@@ -39,7 +39,7 @@ module.exports = function ({ addComponents }) {
         }
 
       },
-      "&:not(:has(tsp-date-input))" :{
+      "&:not(:has(ota-date-input))" :{
 
         "&:has(.error-icon),&:has(.info-icon)": {
           ".ng-invalid.ng-touched": {

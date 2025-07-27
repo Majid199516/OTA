@@ -1,0 +1,165 @@
+:root {
+
+  // buttons colors
+  // primary
+  --light-background-brand-background: #0F6CBD;
+  --light-background-brand-background-hover: #115EA3;
+  --light-background-brand-background-pressed: #0C3B5E;
+  --light-background-brand-background-selected: #0F548C;
+  --darkBlue : #205295;
+  --light-foreground-foreground-on-brand: #fff;
+  // secondary
+  --light-background-background-1: #fff;
+  --light-background-background-1-hover: #F5F5F5;
+  --light-background-background-1-pressed: #E0E0E0;
+  --light-stroke-stroke-1: #D1D1D1;
+  --light-stroke-stroke-3: #F0F0F0;
+  --light-stroke-stroke-1-hover: #C7C7C7;
+  --light-stroke-stroke-1-pressed: #B3B3B3;
+  --light-stroke-stroke-focus-2: #000;
+  // success
+  --success-green : #47A992;
+  --success-green-focus: #9FD2C6;
+  // disabled
+  --light-background-background-disabled: #F0F0F0;
+  --light-background-background-2:#FAFAFA;
+  --light-foreground-foreground-disabled: #BDBDBD;
+  --light-stroke-stroke-disabled: #E0E0E0;
+  // danger
+
+
+
+
+
+  // ali login colors
+  --light-shared-marigold-bg-3: #EAA300;
+
+  // inputs colors
+  --focus: #8FA8CA;
+  --focus-text-color: #0F548C;
+  --light-error: #BC2F32;
+  --disabled-input-text-color: rgba(61, 61, 61, .37);
+  --disabled-text-color: #3D3D3D;
+  --dropdown-text-color: #616161;
+
+
+
+
+  // tabs color
+  --tab-background: #F4F6FA;
+  --tab-text-color: #616161;
+  --tab-icon-color: #424242;
+  --active-tab-text-color: #0F6CBD;
+  --active-tav-icon-color: #0F6CBD;
+
+
+
+
+
+  // overal
+  --text-color: #242424;
+  --eye-icon-color: #424242;
+  --strockgray: #ddd;
+  --light-foreground-foreground-4: #707070;
+  --back-ground: #FAF6F6;
+  --back-panel: #FBFBFB;
+
+  // landing sidebar
+
+  --sidebar-text-color: var(--light-background-background-1);
+  --sidebar-options-text-color: #D6D6D6;
+  --sidebar-settings-text-color: #F0F0F0;
+
+  // toaster colors
+  --success-toaster: #39AE53;
+  --warning-toaster: #FEC51A;
+  --error-toaster: #DE4553;
+  --info-toaster: #1976D2;
+
+  --lightBlue: #0F6CBD;
+
+
+   //  colors of new design system
+
+   --ota-neutral-background : #FAFAFA;
+   --ota-neutral-white : #FEFEFE;
+   --ota-neutral-black : #171717;
+   --ota-neutral-25 : #FCFCFC;
+   --ota-neutral-50 : #F5F5F5;
+
+   --ota-primary-25:#F4FBFF;
+   --ota-primary-50:#E7F5FF;
+   --ota-primary-100:#D8EFFE;
+   --ota-primary-200:#B1DFFD;
+   --ota-primary-300:#8BCFFC;
+   --ota-primary-400:#58BAFB;
+   --ota-primary-500:#0F9CFA;
+   --ota-primary-600:#0890E8;
+   --ota-primary-700:#007DD0;
+   --ota-primary-800:#0063A6;
+   --ota-primary-900:#005085;
+
+   --ota-secondary-500: #002554;
+
+   --ota-gray-25:#F6F6F6;
+   --ota-gray-50:#EEEEEE;
+   --ota-gray-100:#DDDDDD;
+   --ota-gray-200:#CCCCCC;
+   --ota-gray-300:#BBBBBB;
+   --ota-gray-400:#AAAAAA;
+   --ota-gray-500:#8C8C8C;
+   --ota-gray-600:#6F6F6F;
+   --ota-gray-700:#515151;
+   --ota-gray-800:#343434;
+   --ota-gray-900:#252525;
+
+   --ota-info-25:#F5F8FF;
+   --ota-info-50:#EFF4FF;
+   --ota-info-100:#D1E0FF;
+   --ota-info-200:#B2CCFF;
+   --ota-info-300:#84ADFF;
+   --ota-info-400:#528BFF;
+   --ota-info-500:#2970FF;
+   --ota-info-600:#004EEB;
+   --ota-info-700:#0040C1;
+   --ota-info-800:#00359E;
+   --ota-info-900:#002266;
+
+   --ota-success-25:#E9F7E6;
+   --ota-success-50:#D7F5D0;
+   --ota-success-100:#BBEBB0;
+   --ota-success-200:#97E087;
+   --ota-success-300:#79DB63;
+   --ota-success-400:#58CC3D;
+   --ota-success-500:#43B02A;
+   --ota-success-600:#3AA321;
+   --ota-success-700:#178000;
+   --ota-success-800:#286A19;
+   --ota-success-900:#1C5210;
+
+   --ota-error-25:#FFF0F1;
+   --ota-error-50:#FFE0E2;
+   --ota-error-100:#FBCED2;
+   --ota-error-200:#F8A7AD;
+   --ota-error-300:#F58189;
+   --ota-error-400:#F25A64;
+   --ota-error-500:#EF3340;
+   --ota-error-600:#CE2A35;
+   --ota-error-700:#AD212B;
+   --ota-error-800:#8D1820;
+   --ota-error-900:#7C131B;
+
+   --ota-warning-25:#FFFCF6;
+   --ota-warning-50:#FDF3DD;
+   --ota-warning-100:#FBE9C5;
+   --ota-warning-200:#F7D694;
+   --ota-warning-300:#F4C462;
+   --ota-warning-400:#F0B131;
+   --ota-warning-500:#EC9E00;
+   --ota-warning-600:#D48348;
+   --ota-warning-700:#B56931;
+   --ota-warning-800:#924A1F;
+   --ota-warning-900:#783412;
+
+   --ota-divider-color: #BDBDBD,
+}

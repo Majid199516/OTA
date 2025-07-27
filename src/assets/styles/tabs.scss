@@ -1,4 +1,4 @@
-.tsp-secondary-tab {
+.ota-secondary-tab {
   mat-tab-group {
     height: 100%;
 
@@ -58,7 +58,7 @@
       }
     }
 
-    &.tsp-secondary-tab {
+    &.ota-secondary-tab {
       .mat-tab-header {
         .mat-tab-label-container {
           .mat-tab-list {
@@ -88,11 +88,11 @@
 }
 
 
-.tsp-primary-tab {
+.ota-primary-tab {
   mat-tab-group {
     width: 100%;
     height: 100%;
-    .mat-tab-header {
+    mat-tab-header {
       height: 48px;
 
     }
@@ -102,14 +102,14 @@
       height: calc(100% - 48px);
     }
 
-    .mat-tab-label {
+    .mat-mdc-tab-label-container {
       opacity: 1 !important;
       height: 46px;
       .mat-tab-label-content {
         display: flex;
         align-items: center;
         gap: 8px;
-        color: var(--tsp-gray-700);
+        color: var(--ota-gray-700);
         > div {
           height: 24px;
           width: fit-content;
@@ -130,9 +130,9 @@
       }
       &.mat-tab-label-active {
         .mat-tab-label-content {
-          color: var(--tsp-primary-600);
+          color: var(--ota-primary-600);
           .primary-indicator {
-            background-color: var(--tsp-primary-600);
+            background-color: var(--ota-primary-600);
             color: white;
           }
         }
@@ -143,6 +143,6 @@
   }
   
   .mat-ink-bar {
-    background-color: var(--tsp-primary-600) !important;
+    background-color: var(--ota-primary-600) !important;
   }
 }
