@@ -1,1 +1,24 @@
-<p>domestic-flights works!</p>
+<div class="container">
+  <div class="row">
+    <div class="ota-input">
+      <ng-select class="medium" [items]="filghtTypes" (change)="filghtTypeChanged($event)" required>
+      </ng-select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="ota-input">
+      <div class="ota-input">
+        <ng-select class="medium" [items]="cities"  required>
+        </ng-select>
+      </div>
+      <div class="ota-input">
+        <ng-select class="medium" [items]="cities"  required>
+        </ng-select>
+      </div>
+      <input id="reference_number" type="text" class="medium" placeholder=" " formControlName="reference_number">
+      <label for="reference_number">
+        شماره مرجع
+      </label>
+    </div>
+  </div>
+</div>

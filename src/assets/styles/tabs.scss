@@ -92,57 +92,156 @@
   mat-tab-group {
     width: 100%;
     height: 100%;
-    mat-tab-header {
-      height: 48px;
 
+    mat-tab-header {
+      height: 50px;
     }
 
-    .mat-tab-body-wrapper {
-      width: 100%;
+    .mat-mdc-tab-body-wrapper {
       height: calc(100% - 48px);
     }
 
     .mat-mdc-tab-label-container {
+      height: 50px;
       opacity: 1 !important;
-      height: 46px;
-      .mat-tab-label-content {
+      border: none;
+
+      .mdc-tab {
         display: flex;
         align-items: center;
         gap: 8px;
-        color: var(--ota-gray-700);
-        > div {
-          height: 24px;
-          width: fit-content;
+        padding: 0 12px;
+
+        .mdc-tab__content {
           display: flex;
           align-items: center;
-          border-radius: 4px;
+          gap: 8px;
+        }
+
+        .mdc-tab__text-label {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          color: var(--ota-gray-700);
           font-size: 14px;
           font-weight: 400;
-        }
-        .primary-label-text {
-          color: #D6D6D6;
-        }
-        .primary-indicator {
-          padding: 0 6px;
-          color: #707070;
-          background-color: #EBEBEB;
-        }
-      }
-      &.mat-tab-label-active {
-        .mat-tab-label-content {
-          color: var(--ota-primary-600);
+
+          >div {
+            height: 24px;
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            border-radius: 4px;
+          }
+
+          .primary-label-text {
+            color: #D6D6D6;
+          }
+
           .primary-indicator {
-            background-color: var(--ota-primary-600);
-            color: white;
+            padding: 0 6px;
+            color: #707070;
+            background-color: #EBEBEB;
+          }
+        }
+
+        &.mdc-tab--active {
+          .mdc-tab__text-label {
+            color: var(--ota-primary-600);
+
+            .primary-indicator {
+              background-color: var(--ota-primary-600);
+              color: white;
+            }
           }
         }
       }
     }
-    
 
   }
-  
-  .mat-ink-bar {
-    background-color: var(--ota-primary-600) !important;
+  .mdc-tab-indicator__content--underline {
+    border-color: var(--ota-primary-600) !important;
   }
 }
+
+// .ota-primary-tab {
+//   mat-tab-group {
+//     width: 100%;
+//     height: 100%;
+
+//     .mat-mdc-tab-header {
+//       height: 48px;
+//     }
+
+//     .mat-tab-body-wrapper {
+//       width: 100%;
+//       height: calc(100% - 48px);
+//     }
+
+//     .mat-mdc-tab-label-container {
+//       opacity: 1 !important;
+//       height: 50px;
+
+//       .mat-mdc-tab-label {
+//         display: flex;
+//         align-items: center;
+//         gap: 8px;
+//         color: var(--ota-gray-700);
+
+//         .mdc-tab__text-label {
+//           display: flex;
+//           align-items: center;
+//           gap: 8px;
+
+//           >div {
+//             height: 24px;
+//             width: fit-content;
+//             display: flex;
+//             align-items: center;
+//             border-radius: 4px;
+//             font-size: 14px;
+//             font-weight: 400;
+//           }
+
+//           .primary-label-text {
+//             color: #D6D6D6;
+//           }
+
+//           .primary-indicator {
+//             padding: 0 6px;
+//             color: #707070;
+//             background-color: #EBEBEB;
+//           }
+//         }
+
+//         &.mat-mdc-tab-label-active {
+//           color: var(--ota-primary-600);
+
+//           .mdc-tab__text-label {
+//             .primary-indicator {
+//               background-color: var(--ota-primary-600);
+//               color: white;
+//             }
+//           }
+//         }
+//       }
+//     }
+
+//     .mat-mdc-tab-header .mat-mdc-tab-ripple {
+//       display: none; // اختیاری: حذف افکت ripple
+//     }
+
+//     .mat-mdc-tab-header .mat-mdc-tab-header-pagination {
+//       display: none; // حذف دکمه‌های اسکرول تب‌ها در صورت نیاز
+//     }
+
+//     .mat-mdc-tab-header .mat-mdc-tab-labels {
+//       display: flex;
+//       align-items: center;
+//     }
+
+//     .mat-mdc-tab-header .mdc-tab-indicator__content--underline {
+//       border-color: var(--ota-primary-600) !important;
+//     }
+//   }
+// }
