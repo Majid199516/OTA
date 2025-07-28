@@ -1,0 +1,408 @@
+.ota-table-input {
+    mat-form-field {
+        width: 100%;
+        border: none;
+
+        .mat-form-field-wrapper {
+            padding: 0;
+            border: none;
+
+            .mat-form-field-flex {
+                height: 100%;
+                border: none;
+
+                .mat-form-field-infix {
+                    padding: 0;
+                    margin: 0;
+                    border: none;
+
+                    input {
+                        padding: 0;
+                        box-sizing: border-box;
+                        padding-left: 40px;
+                        background-color: white;
+                    }
+                }
+            }
+        }
+
+        .calendar-toggle-button {
+            position: absolute;
+            top: 6px;
+            left: 8px;
+
+            button {
+                width: 24px;
+                height: 24px;
+                background: none;
+
+                .mat-button-wrapper {
+                    width: 20px;
+                    height: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    svg {
+                        color: #424242;
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+
+        .mat-form-field-underline {
+            display: none;
+        }
+
+        .mat-form-field-label {
+            display: none !important;
+        }
+
+        &.mat-focused {
+            .calendar-toggle-button {
+                button {
+                    background: none;
+
+                    .mat-button-wrapper {
+                        svg {
+                            color: var(--focus-text-color);
+                        }
+                    }
+                }
+            }
+        }
+
+        &.ng-invalid {
+            &.ng-touched {
+                .calendar-toggle-button {
+                    button {
+                        .mat-button-wrapper {
+                            svg {
+                                color: var(--light-error);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.medium {
+            height: 40px !important;
+
+            .calendar-toggle-button {
+                top: 8px;
+            }
+
+            input {
+                +label {
+                    top: 8px;
+                }
+            }
+        }
+
+        &.large {
+            height: 44px !important;
+
+            .calendar-toggle-button {
+                top: 10px;
+            }
+
+            input {
+                +label {
+                    top: 10px;
+                }
+            }
+        }
+
+        &.small {
+            height: 32px !important;
+
+            .calendar-toggle-button {
+                top: 4px;
+            }
+
+            input {
+                +label {
+                    top: 4px;
+                }
+            }
+        }
+    }
+
+    .mat-button-focus-overlay {
+        background: none;
+    }
+}
+
+.mat-calendar {
+    * {
+        direction: ltr;
+    }
+}
+
+
+.ota-input-new {
+    mat-form-field {
+        width: 100%;
+        border: none;
+
+        .mat-form-field-wrapper {
+            padding: 0;
+            border: none;
+
+            .mat-form-field-flex {
+                height: 100%;
+                border: none;
+
+                .mat-form-field-infix {
+                    padding: 0;
+                    margin: 0;
+                    border: none;
+
+                    input {
+                        padding: 0;
+                        box-sizing: border-box;
+                        padding-left: 40px;
+                        background-color: #f6f8fa;
+                        border: 0px;
+                    }
+                }
+            }
+        }
+
+        .calendar-toggle-button {
+            position: absolute;
+            top: 6px;
+            left: 8px;
+
+            button {
+                width: 24px;
+                height: 24px;
+                background: none;
+
+                .mat-button-wrapper {
+                    width: 20px;
+                    height: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    svg {
+                        color: #424242;
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+
+        .mat-form-field-underline {
+            display: none;
+        }
+
+        .mat-form-field-label {
+            display: none !important;
+        }
+
+        &.mat-focused {
+            .calendar-toggle-button {
+                button {
+                    background: none;
+
+                    .mat-button-wrapper {
+                        svg {
+                            color: var(--focus-text-color);
+                        }
+                    }
+                }
+            }
+        }
+
+        &.ng-invalid {
+            &.ng-touched {
+                .calendar-toggle-button {
+                    button {
+                        .mat-button-wrapper {
+                            svg {
+                                color: var(--light-error);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.medium {
+            height: 40px !important;
+
+            .calendar-toggle-button {
+                top: 8px;
+            }
+
+            input {
+                +label {
+                    top: 0px;
+                }
+            }
+        }
+
+        &.large {
+            height: 44px !important;
+
+            .calendar-toggle-button {
+                top: 10px;
+            }
+
+            input {
+                +label {
+                    top: 10px;
+                }
+            }
+        }
+
+        &.small {
+            height: 32px !important;
+
+            .calendar-toggle-button {
+                top: 4px;
+            }
+
+            input {
+                +label {
+                    top: 4px;
+                }
+            }
+        }
+    }
+
+    .mat-button-focus-overlay {
+        background: none;
+    }
+}
+
+.mat-calendar {
+    * {
+        direction: ltr;
+    }
+}
+.mat-datepicker-content {
+    * {
+        font-family: 'IYekan';
+        direction: ltr;
+    }
+
+    .mat-datepicker-content-container {
+        .mat-calendar {
+            height: fit-content;
+            mat-calendar-header {
+                .mat-calendar-header {
+                    padding: 8px;
+
+                    .mat-calendar-controls {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .mat-calendar-spacer {
+                            display: none;
+                        }
+
+                        .mat-calendar-period-button {
+                            order: 1;
+                            transition: all 0.2s ease-in-out;
+                            border-radius: 4px;
+
+                            &:not(.mat-button-disabled):hover {
+                                background-color: #0F9CFA;
+                                color: #fff;
+                            }
+
+                            .mat-calendar-arrow {
+                                color: #fff;
+                                transition: all 0.2s ease-in-out;
+
+                            }
+                        }
+
+                        .mat-calendar-next-button {
+                            order: 2;
+                            border-radius: 4px;
+                            transition: all 0.2s ease-in-out;
+
+
+                            &:not(.mat-button-disabled):hover {
+                                background-color: #0F9CFA;
+                                color: #fff;
+                            }
+                        }
+
+                        .mat-calendar-previous-button {
+                            order: 0;
+                            border-radius: 4px;
+                            transition: all 0.2s ease-in-out;
+
+
+                            &:not(.mat-button-disabled):hover {
+                                background-color: #0F9CFA;
+                                color: #fff;
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .mat-calendar-content {
+                .mat-calendar-table {
+                    .mat-calendar-body {
+                        .mat-calendar-body-cell-container {
+
+                            .mat-calendar-body-cell,
+                            .mat-calendar-body-active {
+                                .mat-calendar-body-cell-content {
+                                    border-radius: 4px;
+                                    transition: all 0.2s ease-in-out;
+
+                                    &:hover {
+                                        background-color: #0F9CFA;
+                                        color: #fff;
+                                    }
+
+                                    &.mat-calendar-body-selected {
+                                        background-color: #0F9CFA;
+                                    }
+
+                                    &.mat-calendar-body-today {
+                                        background-color: #8BCFFC;
+                                        color: #fff;
+                                        border: none;
+
+                                        &:hover {
+                                            background-color: #8BCFFC;
+                                        }
+                                    }
+                                }
+
+                                &.mat-calendar-body-disabled {
+                                    .mat-calendar-body-cell-content {
+                                        background-color: #F5F5F5;
+                                        color: #AAAAAA;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.ota-input {
+    span.info-icon {
+        position: absolute;
+        top: 26px;
+        right: 8px;
+    }
+}

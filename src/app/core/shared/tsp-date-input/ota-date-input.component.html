@@ -1,0 +1,43 @@
+<div class="ota-input">
+  <mat-form-field class="medium" [class.ng-invalid]="!isValid" [class.ng-touched]="!isValid">
+    <input
+      class="medium persian-number ltr"
+      [class.has-value]="date"
+      [class.mandatory]="inputMandatory"
+      [class.have-clear]="isHaveClear"
+      matInput
+      [matDatepicker]="picker"
+      [placeholder]="placeholder"
+      [(ngModel)]="date"
+      (ngModelChange)="valueEntered($event)"
+      [max]="maxDate"
+      [min]="minDate"
+      [disabled]="disabled"
+    />
+    <label>
+      {{label}}
+    </label>
+    <span
+      *ngIf="isHaveClear"
+      class="close-icon absolute left-4"
+      (click)="clearInput(date)"
+    >
+      <mat-icon svgIcon="filled:close"></mat-icon>
+    </span>
+    <mat-datepicker-toggle
+      class="calendar-toggle-button"
+      [for]="picker"
+    >
+      <!-- <mat-icon svgIcon="calnedar"></mat-icon> -->
+    </mat-datepicker-toggle>
+        <div class="calendar-toggle-button">
+      <button mat-button>
+        <span class="mat-button-wrapper custom">
+          <mat-icon svgIcon="filled:calendar"></mat-icon>
+        </span>
+      </button>
+    </div>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+</div>
+

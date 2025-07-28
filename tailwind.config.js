@@ -41,7 +41,7 @@ module.exports = {
       webLandscape: { raw: '(min-width: 1280px) and (orientation: landscape)' },
     },
     fontFamily: {
-      sans: ["TiranTSP-Font", "sans-serif"],
+      sans: ["Tiranota-Font", "sans-serif"],
       persinanNumber: ["IYekan", "sans-serif"],
     },
     boxShadow: {

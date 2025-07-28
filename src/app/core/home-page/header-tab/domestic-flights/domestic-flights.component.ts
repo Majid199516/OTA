@@ -1,16 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { MatIcon } from '@angular/material/icon';
 import {
   NgLabelTemplateDirective,
   NgOptionTemplateDirective,
   NgSelectComponent,
 } from '@ng-select/ng-select';
+import { otaDateInputComponent } from '../../../shared/tsp-date-input/ota-date-input.component';
 
 @Component({
   selector: 'domestic-flights',
   standalone: true,
   imports: [
     NgSelectComponent,
+    MatIcon,
+    otaDateInputComponent
   ],
   templateUrl: './domestic-flights.component.html',
   styleUrl: './domestic-flights.component.scss',
